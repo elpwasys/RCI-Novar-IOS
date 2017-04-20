@@ -1,0 +1,1007 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86C761FBF27F15EEBC236BFF /* Pods_Novar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B820C6D4F6B5F430F57F31A /* Pods_Novar.framework */; };
+		EE21804D1E1FD95E004F5AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21804C1E1FD95E004F5AAB /* AppDelegate.swift */; };
+		EE2180521E1FD95E004F5AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2180501E1FD95E004F5AAB /* Main.storyboard */; };
+		EE2180541E1FD95E004F5AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2180531E1FD95E004F5AAB /* Assets.xcassets */; };
+		EE2180571E1FD95E004F5AAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2180551E1FD95E004F5AAB /* LaunchScreen.storyboard */; };
+		EE2180651E1FDF04004F5AAB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2180641E1FDF04004F5AAB /* SWRevealViewController.m */; };
+		EE2180671E1FDF54004F5AAB /* Novar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180661E1FDF54004F5AAB /* Novar.swift */; };
+		EE2180691E1FDF6C004F5AAB /* aprovacao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE2180681E1FDF6C004F5AAB /* aprovacao.jpg */; };
+		EE21806D1E1FDF8B004F5AAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE21806C1E1FDF8B004F5AAB /* Localizable.strings */; };
+		EE2180761E1FE049004F5AAB /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180751E1FE049004F5AAB /* HRToast+UIView.swift */; };
+		EE2180781E1FE071004F5AAB /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180771E1FE071004F5AAB /* App.swift */; };
+		EE21807A1E1FE086004F5AAB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180791E1FE086004F5AAB /* Service.swift */; };
+		EE2180801E1FE09D004F5AAB /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21807C1E1FE09D004F5AAB /* DateUtils.swift */; };
+		EE2180811E1FE09D004F5AAB /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21807D1E1FE09D004F5AAB /* TextUtils.swift */; };
+		EE2180821E1FE09D004F5AAB /* NumberUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21807E1E1FE09D004F5AAB /* NumberUtils.swift */; };
+		EE2180831E1FE09D004F5AAB /* DecimalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21807F1E1FE09D004F5AAB /* DecimalField.swift */; };
+		EE2180861E1FE0B1004F5AAB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180851E1FE0B1004F5AAB /* Model.swift */; };
+		EE2180891E1FE0C3004F5AAB /* HttpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180881E1FE0C3004F5AAB /* HttpStatus.swift */; };
+		EE21808C1E1FE0D7004F5AAB /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21808B1E1FE0D7004F5AAB /* AppViewController.swift */; };
+		EE2180A61E1FE1E0004F5AAB /* UsuarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180911E1FE1E0004F5AAB /* UsuarioModel.swift */; };
+		EE2180A71E1FE1E0004F5AAB /* RegiaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180921E1FE1E0004F5AAB /* RegiaoModel.swift */; };
+		EE2180A81E1FE1E0004F5AAB /* ConcessionariaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180931E1FE1E0004F5AAB /* ConcessionariaModel.swift */; };
+		EE2180A91E1FE1E0004F5AAB /* ContaProcessoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180941E1FE1E0004F5AAB /* ContaProcessoModel.swift */; };
+		EE2180AA1E1FE1E0004F5AAB /* PendenciaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180951E1FE1E0004F5AAB /* PendenciaModel.swift */; };
+		EE2180AB1E1FE1E0004F5AAB /* IrregularidadeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180961E1FE1E0004F5AAB /* IrregularidadeModel.swift */; };
+		EE2180AC1E1FE1E0004F5AAB /* EmpresaTransformadoraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180971E1FE1E0004F5AAB /* EmpresaTransformadoraModel.swift */; };
+		EE2180AD1E1FE1E0004F5AAB /* FinanciadoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180981E1FE1E0004F5AAB /* FinanciadoModel.swift */; };
+		EE2180AE1E1FE1E0004F5AAB /* ProcessoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180991E1FE1E0004F5AAB /* ProcessoModel.swift */; };
+		EE2180AF1E1FE1E0004F5AAB /* DocumentoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21809A1E1FE1E0004F5AAB /* DocumentoModel.swift */; };
+		EE2180B01E1FE1E0004F5AAB /* MarcaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21809B1E1FE1E0004F5AAB /* MarcaModel.swift */; };
+		EE2180B11E1FE1E0004F5AAB /* ModeloModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21809C1E1FE1E0004F5AAB /* ModeloModel.swift */; };
+		EE2180B21E1FE1E0004F5AAB /* VersaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21809D1E1FE1E0004F5AAB /* VersaoModel.swift */; };
+		EE2180B31E1FE1E0004F5AAB /* TipoProcessoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21809E1E1FE1E0004F5AAB /* TipoProcessoModel.swift */; };
+		EE2180B41E1FE1E0004F5AAB /* TransformacaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21809F1E1FE1E0004F5AAB /* TransformacaoModel.swift */; };
+		EE2180B51E1FE1E0004F5AAB /* SeguroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180A01E1FE1E0004F5AAB /* SeguroModel.swift */; };
+		EE2180B61E1FE1E0004F5AAB /* SeguroDocumentoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180A11E1FE1E0004F5AAB /* SeguroDocumentoModel.swift */; };
+		EE2180B71E1FE1E0004F5AAB /* PagingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180A21E1FE1E0004F5AAB /* PagingModel.swift */; };
+		EE2180B81E1FE1E0004F5AAB /* DataMobileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180A31E1FE1E0004F5AAB /* DataMobileModel.swift */; };
+		EE2180B91E1FE1E0004F5AAB /* DocumentosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180A41E1FE1E0004F5AAB /* DocumentosModel.swift */; };
+		EE2180BA1E1FE1E0004F5AAB /* ImagemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180A51E1FE1E0004F5AAB /* ImagemModel.swift */; };
+		EE2180BF1E1FE1F1004F5AAB /* ProcessoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180BB1E1FE1F1004F5AAB /* ProcessoResponse.swift */; };
+		EE2180C01E1FE1F1004F5AAB /* ProcessoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180BC1E1FE1F1004F5AAB /* ProcessoRequest.swift */; };
+		EE2180C11E1FE1F1004F5AAB /* KeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180BD1E1FE1F1004F5AAB /* KeyValue.swift */; };
+		EE2180C21E1FE1F1004F5AAB /* Digitalizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180BE1E1FE1F1004F5AAB /* Digitalizacao.swift */; };
+		EE2180C61E1FE206004F5AAB /* ProcessoFiltro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180C51E1FE206004F5AAB /* ProcessoFiltro.swift */; };
+		EE2180CE1E1FE219004F5AAB /* ProcessoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180C71E1FE219004F5AAB /* ProcessoTableViewCell.swift */; };
+		EE2180CF1E1FE219004F5AAB /* ProcessoLegendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180C81E1FE219004F5AAB /* ProcessoLegendaTableViewCell.swift */; };
+		EE2180D01E1FE219004F5AAB /* DocumentoLengendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180C91E1FE219004F5AAB /* DocumentoLengendaTableViewCell.swift */; };
+		EE2180D11E1FE219004F5AAB /* SeguroDocumentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180CA1E1FE219004F5AAB /* SeguroDocumentoTableViewCell.swift */; };
+		EE2180D21E1FE219004F5AAB /* DocumentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180CB1E1FE219004F5AAB /* DocumentoTableViewCell.swift */; };
+		EE2180D31E1FE219004F5AAB /* OpcionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180CC1E1FE219004F5AAB /* OpcionalTableViewCell.swift */; };
+		EE2180D41E1FE219004F5AAB /* ImagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180CD1E1FE219004F5AAB /* ImagemCollectionViewCell.swift */; };
+		EE2180D81E1FE227004F5AAB /* DataModelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180D51E1FE227004F5AAB /* DataModelRepository.swift */; };
+		EE2180D91E1FE227004F5AAB /* DocumentoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180D61E1FE227004F5AAB /* DocumentoRepository.swift */; };
+		EE2180DA1E1FE227004F5AAB /* ImagemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180D71E1FE227004F5AAB /* ImagemRepository.swift */; };
+		EE2180E41E1FE235004F5AAB /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180DB1E1FE235004F5AAB /* LoginService.swift */; };
+		EE2180E51E1FE235004F5AAB /* NovarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180DC1E1FE235004F5AAB /* NovarService.swift */; };
+		EE2180E61E1FE235004F5AAB /* ProcessoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180DD1E1FE235004F5AAB /* ProcessoService.swift */; };
+		EE2180E71E1FE235004F5AAB /* MarcaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180DE1E1FE235004F5AAB /* MarcaService.swift */; };
+		EE2180E81E1FE235004F5AAB /* ModeloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180DF1E1FE235004F5AAB /* ModeloService.swift */; };
+		EE2180E91E1FE235004F5AAB /* VersaoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180E01E1FE235004F5AAB /* VersaoService.swift */; };
+		EE2180EA1E1FE235004F5AAB /* ContaProcessoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180E11E1FE235004F5AAB /* ContaProcessoService.swift */; };
+		EE2180EB1E1FE235004F5AAB /* ImagemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180E21E1FE235004F5AAB /* ImagemService.swift */; };
+		EE2180EC1E1FE235004F5AAB /* DocumentoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180E31E1FE235004F5AAB /* DocumentoService.swift */; };
+		EE2181031E1FE250004F5AAB /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180ED1E1FE250004F5AAB /* DrawerViewController.swift */; };
+		EE2181041E1FE250004F5AAB /* ProcessoCadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180EE1E1FE250004F5AAB /* ProcessoCadastroViewController.swift */; };
+		EE2181051E1FE250004F5AAB /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180EF1E1FE250004F5AAB /* SobreViewController.swift */; };
+		EE2181061E1FE250004F5AAB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F01E1FE250004F5AAB /* HomeViewController.swift */; };
+		EE2181071E1FE250004F5AAB /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F11E1FE250004F5AAB /* MenuTableViewController.swift */; };
+		EE2181081E1FE250004F5AAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F21E1FE250004F5AAB /* LoginViewController.swift */; };
+		EE2181091E1FE250004F5AAB /* SuporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F31E1FE250004F5AAB /* SuporteViewController.swift */; };
+		EE21810A1E1FE250004F5AAB /* ProcessoPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F41E1FE250004F5AAB /* ProcessoPesquisaViewController.swift */; };
+		EE21810B1E1FE250004F5AAB /* TermoUsoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F51E1FE250004F5AAB /* TermoUsoViewController.swift */; };
+		EE21810C1E1FE250004F5AAB /* TermoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F61E1FE250004F5AAB /* TermoViewController.swift */; };
+		EE21810D1E1FE250004F5AAB /* ProcessoFiltroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F71E1FE250004F5AAB /* ProcessoFiltroViewController.swift */; };
+		EE21810E1E1FE250004F5AAB /* NovarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F81E1FE250004F5AAB /* NovarViewController.swift */; };
+		EE21810F1E1FE250004F5AAB /* ProcessoLegandaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180F91E1FE250004F5AAB /* ProcessoLegandaViewController.swift */; };
+		EE2181101E1FE250004F5AAB /* DocumentoLegendaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180FA1E1FE250004F5AAB /* DocumentoLegendaTableViewController.swift */; };
+		EE2181111E1FE250004F5AAB /* ProcessoDetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180FB1E1FE250004F5AAB /* ProcessoDetalheViewController.swift */; };
+		EE2181121E1FE250004F5AAB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180FC1E1FE250004F5AAB /* MessageViewController.swift */; };
+		EE2181131E1FE250004F5AAB /* SeguroEdicaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180FD1E1FE250004F5AAB /* SeguroEdicaoViewController.swift */; };
+		EE2181141E1FE250004F5AAB /* SeguroListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180FE1E1FE250004F5AAB /* SeguroListaViewController.swift */; };
+		EE2181151E1FE250004F5AAB /* DocumentoListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2180FF1E1FE250004F5AAB /* DocumentoListaViewController.swift */; };
+		EE2181161E1FE250004F5AAB /* OpcionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2181001E1FE250004F5AAB /* OpcionalViewController.swift */; };
+		EE2181171E1FE250004F5AAB /* DocumentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2181011E1FE250004F5AAB /* DocumentoViewController.swift */; };
+		EE2181181E1FE250004F5AAB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2181021E1FE250004F5AAB /* ImageViewController.swift */; };
+		EE21811B1E1FE268004F5AAB /* DateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2181191E1FE268004F5AAB /* DateField.swift */; };
+		EE21811C1E1FE268004F5AAB /* PickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE21811A1E1FE268004F5AAB /* PickerField.swift */; };
+		EE21811E1E1FE4DE004F5AAB /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE21811D1E1FE4DE004F5AAB /* Entitlements.plist */; };
+		EE2181231E1FEF06004F5AAB /* NovarDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE2181211E1FEF06004F5AAB /* NovarDataModel.xcdatamodeld */; };
+		EE7BAE7C1E282FBE00055D28 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7BAE7B1E282FBE00055D28 /* Menu.storyboard */; };
+		EE7BAE7E1E283AD700055D28 /* Transformacao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7BAE7D1E283AD700055D28 /* Transformacao.storyboard */; };
+		EE84D8411E28F77700F7646D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84D8401E28F77700F7646D /* View.swift */; };
+		EE84D8451E2923BE00F7646D /* TransformacaoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84D8441E2923BE00F7646D /* TransformacaoListViewController.swift */; };
+		EE84D8471E29254B00F7646D /* TransformacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84D8461E29254B00F7646D /* TransformacaoTableViewCell.swift */; };
+		EE84D8491E29269200F7646D /* TransformacaoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84D8481E29269200F7646D /* TransformacaoEditViewController.swift */; };
+		EE84D84B1E29387D00F7646D /* JustificativaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE84D84A1E29387D00F7646D /* JustificativaViewController.swift */; };
+		EEB4CD7C1E28005000D3B0F3 /* Seguro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB4CD7A1E28005000D3B0F3 /* Seguro.storyboard */; };
+		EEB4CD7E1E28019800D3B0F3 /* Documento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB4CD7D1E28019800D3B0F3 /* Documento.storyboard */; };
+		EEB4CD801E28057300D3B0F3 /* StoryboardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4CD7F1E28057300D3B0F3 /* StoryboardUtils.swift */; };
+		EEB4CD831E28102F00D3B0F3 /* Processo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB4CD811E28102F00D3B0F3 /* Processo.storyboard */; };
+		EED300011E2695F3006B0AFA /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED300001E2695F3006B0AFA /* Label.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		764A5FF32956F5A8AF8BF85F /* Pods-Novar.ad hoc distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novar.ad hoc distribution.xcconfig"; path = "Pods/Target Support Files/Pods-Novar/Pods-Novar.ad hoc distribution.xcconfig"; sourceTree = "<group>"; };
+		9B820C6D4F6B5F430F57F31A /* Pods_Novar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Novar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB79CCC77EBBD641C156F660 /* Pods-Novar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Novar/Pods-Novar.release.xcconfig"; sourceTree = "<group>"; };
+		ED48F3D742E212E756B64672 /* Pods-Novar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Novar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Novar/Pods-Novar.debug.xcconfig"; sourceTree = "<group>"; };
+		EE2180491E1FD95E004F5AAB /* Novar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Novar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE21804C1E1FD95E004F5AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE2180511E1FD95E004F5AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE2180531E1FD95E004F5AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE2180561E1FD95E004F5AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE2180581E1FD95E004F5AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2180621E1FDF04004F5AAB /* Novar-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Novar-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE2180631E1FDF04004F5AAB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EE2180641E1FDF04004F5AAB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EE2180661E1FDF54004F5AAB /* Novar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Novar.swift; sourceTree = "<group>"; };
+		EE2180681E1FDF6C004F5AAB /* aprovacao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aprovacao.jpg; sourceTree = "<group>"; };
+		EE21806C1E1FDF8B004F5AAB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EE2180751E1FE049004F5AAB /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		EE2180771E1FE071004F5AAB /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		EE2180791E1FE086004F5AAB /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		EE21807C1E1FE09D004F5AAB /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		EE21807D1E1FE09D004F5AAB /* TextUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextUtils.swift; sourceTree = "<group>"; };
+		EE21807E1E1FE09D004F5AAB /* NumberUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberUtils.swift; sourceTree = "<group>"; };
+		EE21807F1E1FE09D004F5AAB /* DecimalField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalField.swift; sourceTree = "<group>"; };
+		EE2180851E1FE0B1004F5AAB /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EE2180881E1FE0C3004F5AAB /* HttpStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpStatus.swift; sourceTree = "<group>"; };
+		EE21808B1E1FE0D7004F5AAB /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		EE2180911E1FE1E0004F5AAB /* UsuarioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioModel.swift; sourceTree = "<group>"; };
+		EE2180921E1FE1E0004F5AAB /* RegiaoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegiaoModel.swift; sourceTree = "<group>"; };
+		EE2180931E1FE1E0004F5AAB /* ConcessionariaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcessionariaModel.swift; sourceTree = "<group>"; };
+		EE2180941E1FE1E0004F5AAB /* ContaProcessoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaProcessoModel.swift; sourceTree = "<group>"; };
+		EE2180951E1FE1E0004F5AAB /* PendenciaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendenciaModel.swift; sourceTree = "<group>"; };
+		EE2180961E1FE1E0004F5AAB /* IrregularidadeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrregularidadeModel.swift; sourceTree = "<group>"; };
+		EE2180971E1FE1E0004F5AAB /* EmpresaTransformadoraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmpresaTransformadoraModel.swift; sourceTree = "<group>"; };
+		EE2180981E1FE1E0004F5AAB /* FinanciadoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanciadoModel.swift; sourceTree = "<group>"; };
+		EE2180991E1FE1E0004F5AAB /* ProcessoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoModel.swift; sourceTree = "<group>"; };
+		EE21809A1E1FE1E0004F5AAB /* DocumentoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoModel.swift; sourceTree = "<group>"; };
+		EE21809B1E1FE1E0004F5AAB /* MarcaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarcaModel.swift; sourceTree = "<group>"; };
+		EE21809C1E1FE1E0004F5AAB /* ModeloModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeloModel.swift; sourceTree = "<group>"; };
+		EE21809D1E1FE1E0004F5AAB /* VersaoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersaoModel.swift; sourceTree = "<group>"; };
+		EE21809E1E1FE1E0004F5AAB /* TipoProcessoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoProcessoModel.swift; sourceTree = "<group>"; };
+		EE21809F1E1FE1E0004F5AAB /* TransformacaoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformacaoModel.swift; sourceTree = "<group>"; };
+		EE2180A01E1FE1E0004F5AAB /* SeguroModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguroModel.swift; sourceTree = "<group>"; };
+		EE2180A11E1FE1E0004F5AAB /* SeguroDocumentoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguroDocumentoModel.swift; sourceTree = "<group>"; };
+		EE2180A21E1FE1E0004F5AAB /* PagingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingModel.swift; sourceTree = "<group>"; };
+		EE2180A31E1FE1E0004F5AAB /* DataMobileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataMobileModel.swift; sourceTree = "<group>"; };
+		EE2180A41E1FE1E0004F5AAB /* DocumentosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentosModel.swift; sourceTree = "<group>"; };
+		EE2180A51E1FE1E0004F5AAB /* ImagemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagemModel.swift; sourceTree = "<group>"; };
+		EE2180BB1E1FE1F1004F5AAB /* ProcessoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoResponse.swift; sourceTree = "<group>"; };
+		EE2180BC1E1FE1F1004F5AAB /* ProcessoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoRequest.swift; sourceTree = "<group>"; };
+		EE2180BD1E1FE1F1004F5AAB /* KeyValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValue.swift; sourceTree = "<group>"; };
+		EE2180BE1E1FE1F1004F5AAB /* Digitalizacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digitalizacao.swift; sourceTree = "<group>"; };
+		EE2180C51E1FE206004F5AAB /* ProcessoFiltro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoFiltro.swift; sourceTree = "<group>"; };
+		EE2180C71E1FE219004F5AAB /* ProcessoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoTableViewCell.swift; sourceTree = "<group>"; };
+		EE2180C81E1FE219004F5AAB /* ProcessoLegendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoLegendaTableViewCell.swift; sourceTree = "<group>"; };
+		EE2180C91E1FE219004F5AAB /* DocumentoLengendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoLengendaTableViewCell.swift; sourceTree = "<group>"; };
+		EE2180CA1E1FE219004F5AAB /* SeguroDocumentoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguroDocumentoTableViewCell.swift; sourceTree = "<group>"; };
+		EE2180CB1E1FE219004F5AAB /* DocumentoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoTableViewCell.swift; sourceTree = "<group>"; };
+		EE2180CC1E1FE219004F5AAB /* OpcionalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionalTableViewCell.swift; sourceTree = "<group>"; };
+		EE2180CD1E1FE219004F5AAB /* ImagemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagemCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE2180D51E1FE227004F5AAB /* DataModelRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModelRepository.swift; sourceTree = "<group>"; };
+		EE2180D61E1FE227004F5AAB /* DocumentoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoRepository.swift; sourceTree = "<group>"; };
+		EE2180D71E1FE227004F5AAB /* ImagemRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagemRepository.swift; sourceTree = "<group>"; };
+		EE2180DB1E1FE235004F5AAB /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		EE2180DC1E1FE235004F5AAB /* NovarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovarService.swift; sourceTree = "<group>"; };
+		EE2180DD1E1FE235004F5AAB /* ProcessoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoService.swift; sourceTree = "<group>"; };
+		EE2180DE1E1FE235004F5AAB /* MarcaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarcaService.swift; sourceTree = "<group>"; };
+		EE2180DF1E1FE235004F5AAB /* ModeloService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeloService.swift; sourceTree = "<group>"; };
+		EE2180E01E1FE235004F5AAB /* VersaoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersaoService.swift; sourceTree = "<group>"; };
+		EE2180E11E1FE235004F5AAB /* ContaProcessoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaProcessoService.swift; sourceTree = "<group>"; };
+		EE2180E21E1FE235004F5AAB /* ImagemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagemService.swift; sourceTree = "<group>"; };
+		EE2180E31E1FE235004F5AAB /* DocumentoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoService.swift; sourceTree = "<group>"; };
+		EE2180ED1E1FE250004F5AAB /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		EE2180EE1E1FE250004F5AAB /* ProcessoCadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoCadastroViewController.swift; sourceTree = "<group>"; };
+		EE2180EF1E1FE250004F5AAB /* SobreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		EE2180F01E1FE250004F5AAB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EE2180F11E1FE250004F5AAB /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		EE2180F21E1FE250004F5AAB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EE2180F31E1FE250004F5AAB /* SuporteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuporteViewController.swift; sourceTree = "<group>"; };
+		EE2180F41E1FE250004F5AAB /* ProcessoPesquisaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoPesquisaViewController.swift; sourceTree = "<group>"; };
+		EE2180F51E1FE250004F5AAB /* TermoUsoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermoUsoViewController.swift; sourceTree = "<group>"; };
+		EE2180F61E1FE250004F5AAB /* TermoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermoViewController.swift; sourceTree = "<group>"; };
+		EE2180F71E1FE250004F5AAB /* ProcessoFiltroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoFiltroViewController.swift; sourceTree = "<group>"; };
+		EE2180F81E1FE250004F5AAB /* NovarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovarViewController.swift; sourceTree = "<group>"; };
+		EE2180F91E1FE250004F5AAB /* ProcessoLegandaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoLegandaViewController.swift; sourceTree = "<group>"; };
+		EE2180FA1E1FE250004F5AAB /* DocumentoLegendaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoLegendaTableViewController.swift; sourceTree = "<group>"; };
+		EE2180FB1E1FE250004F5AAB /* ProcessoDetalheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessoDetalheViewController.swift; sourceTree = "<group>"; };
+		EE2180FC1E1FE250004F5AAB /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		EE2180FD1E1FE250004F5AAB /* SeguroEdicaoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguroEdicaoViewController.swift; sourceTree = "<group>"; };
+		EE2180FE1E1FE250004F5AAB /* SeguroListaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguroListaViewController.swift; sourceTree = "<group>"; };
+		EE2180FF1E1FE250004F5AAB /* DocumentoListaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoListaViewController.swift; sourceTree = "<group>"; };
+		EE2181001E1FE250004F5AAB /* OpcionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpcionalViewController.swift; sourceTree = "<group>"; };
+		EE2181011E1FE250004F5AAB /* DocumentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentoViewController.swift; sourceTree = "<group>"; };
+		EE2181021E1FE250004F5AAB /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		EE2181191E1FE268004F5AAB /* DateField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateField.swift; sourceTree = "<group>"; };
+		EE21811A1E1FE268004F5AAB /* PickerField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerField.swift; sourceTree = "<group>"; };
+		EE21811D1E1FE4DE004F5AAB /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		EE2181221E1FEF06004F5AAB /* NovarDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NovarDataModel.xcdatamodel; sourceTree = "<group>"; };
+		EE7BAE7B1E282FBE00055D28 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		EE7BAE7D1E283AD700055D28 /* Transformacao.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transformacao.storyboard; sourceTree = "<group>"; };
+		EE84D8401E28F77700F7646D /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		EE84D8441E2923BE00F7646D /* TransformacaoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformacaoListViewController.swift; sourceTree = "<group>"; };
+		EE84D8461E29254B00F7646D /* TransformacaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformacaoTableViewCell.swift; sourceTree = "<group>"; };
+		EE84D8481E29269200F7646D /* TransformacaoEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformacaoEditViewController.swift; sourceTree = "<group>"; };
+		EE84D84A1E29387D00F7646D /* JustificativaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustificativaViewController.swift; sourceTree = "<group>"; };
+		EEB4CD7B1E28005000D3B0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Seguro.storyboard; sourceTree = "<group>"; };
+		EEB4CD7D1E28019800D3B0F3 /* Documento.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Documento.storyboard; sourceTree = "<group>"; };
+		EEB4CD7F1E28057300D3B0F3 /* StoryboardUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardUtils.swift; sourceTree = "<group>"; };
+		EEB4CD821E28102F00D3B0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Processo.storyboard; sourceTree = "<group>"; };
+		EED300001E2695F3006B0AFA /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE2180461E1FD95E004F5AAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C761FBF27F15EEBC236BFF /* Pods_Novar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36B0781D0E48E7B77246000F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED48F3D742E212E756B64672 /* Pods-Novar.debug.xcconfig */,
+				AB79CCC77EBBD641C156F660 /* Pods-Novar.release.xcconfig */,
+				764A5FF32956F5A8AF8BF85F /* Pods-Novar.ad hoc distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A85E98DC0AD8F492FFD1D83A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B820C6D4F6B5F430F57F31A /* Pods_Novar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE2180401E1FD95E004F5AAB = {
+			isa = PBXGroup;
+			children = (
+				EE21804B1E1FD95E004F5AAB /* Novar */,
+				EE2180731E1FE018004F5AAB /* Infra */,
+				EE21804A1E1FD95E004F5AAB /* Products */,
+				36B0781D0E48E7B77246000F /* Pods */,
+				A85E98DC0AD8F492FFD1D83A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE21804A1E1FD95E004F5AAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180491E1FD95E004F5AAB /* Novar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE21804B1E1FD95E004F5AAB /* Novar */ = {
+			isa = PBXGroup;
+			children = (
+				EE21806F1E1FDFD4004F5AAB /* Model */,
+				EE2180701E1FDFE9004F5AAB /* Filtro */,
+				EE2180711E1FDFF8004F5AAB /* Table View Cell */,
+				EE21808D1E1FE189004F5AAB /* View Controller */,
+				EE21808E1E1FE195004F5AAB /* Service */,
+				EE2180721E1FE006004F5AAB /* Repository */,
+				EE21808F1E1FE19E004F5AAB /* Http */,
+				EE2180901E1FE1A5004F5AAB /* UI */,
+				EE21804C1E1FD95E004F5AAB /* AppDelegate.swift */,
+				EE2180551E1FD95E004F5AAB /* LaunchScreen.storyboard */,
+				EE2180501E1FD95E004F5AAB /* Main.storyboard */,
+				EE7BAE7B1E282FBE00055D28 /* Menu.storyboard */,
+				EEB4CD811E28102F00D3B0F3 /* Processo.storyboard */,
+				EEB4CD7D1E28019800D3B0F3 /* Documento.storyboard */,
+				EEB4CD7A1E28005000D3B0F3 /* Seguro.storyboard */,
+				EE7BAE7D1E283AD700055D28 /* Transformacao.storyboard */,
+				EE2180531E1FD95E004F5AAB /* Assets.xcassets */,
+				EE2180581E1FD95E004F5AAB /* Info.plist */,
+				EE21811D1E1FE4DE004F5AAB /* Entitlements.plist */,
+				EE21806C1E1FDF8B004F5AAB /* Localizable.strings */,
+				EE2180601E1FDE6E004F5AAB /* Supporting Files */,
+				EE2180661E1FDF54004F5AAB /* Novar.swift */,
+				EE2180681E1FDF6C004F5AAB /* aprovacao.jpg */,
+				EE2181211E1FEF06004F5AAB /* NovarDataModel.xcdatamodeld */,
+			);
+			path = Novar;
+			sourceTree = "<group>";
+		};
+		EE2180601E1FDE6E004F5AAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180621E1FDF04004F5AAB /* Novar-Bridging-Header.h */,
+				EE2180631E1FDF04004F5AAB /* SWRevealViewController.h */,
+				EE2180641E1FDF04004F5AAB /* SWRevealViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE21806F1E1FDFD4004F5AAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180911E1FE1E0004F5AAB /* UsuarioModel.swift */,
+				EE2180921E1FE1E0004F5AAB /* RegiaoModel.swift */,
+				EE2180931E1FE1E0004F5AAB /* ConcessionariaModel.swift */,
+				EE2180941E1FE1E0004F5AAB /* ContaProcessoModel.swift */,
+				EE2180951E1FE1E0004F5AAB /* PendenciaModel.swift */,
+				EE2180961E1FE1E0004F5AAB /* IrregularidadeModel.swift */,
+				EE2180971E1FE1E0004F5AAB /* EmpresaTransformadoraModel.swift */,
+				EE2180981E1FE1E0004F5AAB /* FinanciadoModel.swift */,
+				EE2180991E1FE1E0004F5AAB /* ProcessoModel.swift */,
+				EE21809A1E1FE1E0004F5AAB /* DocumentoModel.swift */,
+				EE21809B1E1FE1E0004F5AAB /* MarcaModel.swift */,
+				EE21809C1E1FE1E0004F5AAB /* ModeloModel.swift */,
+				EE21809D1E1FE1E0004F5AAB /* VersaoModel.swift */,
+				EE21809E1E1FE1E0004F5AAB /* TipoProcessoModel.swift */,
+				EE21809F1E1FE1E0004F5AAB /* TransformacaoModel.swift */,
+				EE2180A01E1FE1E0004F5AAB /* SeguroModel.swift */,
+				EE2180A11E1FE1E0004F5AAB /* SeguroDocumentoModel.swift */,
+				EE2180A21E1FE1E0004F5AAB /* PagingModel.swift */,
+				EE2180A31E1FE1E0004F5AAB /* DataMobileModel.swift */,
+				EE2180A41E1FE1E0004F5AAB /* DocumentosModel.swift */,
+				EE2180A51E1FE1E0004F5AAB /* ImagemModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EE2180701E1FDFE9004F5AAB /* Filtro */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180C51E1FE206004F5AAB /* ProcessoFiltro.swift */,
+			);
+			name = Filtro;
+			sourceTree = "<group>";
+		};
+		EE2180711E1FDFF8004F5AAB /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180C71E1FE219004F5AAB /* ProcessoTableViewCell.swift */,
+				EE2180C81E1FE219004F5AAB /* ProcessoLegendaTableViewCell.swift */,
+				EE2180C91E1FE219004F5AAB /* DocumentoLengendaTableViewCell.swift */,
+				EE2180CA1E1FE219004F5AAB /* SeguroDocumentoTableViewCell.swift */,
+				EE2180CB1E1FE219004F5AAB /* DocumentoTableViewCell.swift */,
+				EE2180CC1E1FE219004F5AAB /* OpcionalTableViewCell.swift */,
+				EE2180CD1E1FE219004F5AAB /* ImagemCollectionViewCell.swift */,
+				EE84D8461E29254B00F7646D /* TransformacaoTableViewCell.swift */,
+			);
+			name = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		EE2180721E1FE006004F5AAB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180D51E1FE227004F5AAB /* DataModelRepository.swift */,
+				EE2180D61E1FE227004F5AAB /* DocumentoRepository.swift */,
+				EE2180D71E1FE227004F5AAB /* ImagemRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		EE2180731E1FE018004F5AAB /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				EE21807B1E1FE08F004F5AAB /* Utils */,
+				EE2180841E1FE0A7004F5AAB /* Model */,
+				EE2180871E1FE0B7004F5AAB /* Http */,
+				EE21808A1E1FE0CC004F5AAB /* View Controller */,
+				EE2180741E1FE02D004F5AAB /* Service */,
+				EE2180771E1FE071004F5AAB /* App.swift */,
+				EE2180751E1FE049004F5AAB /* HRToast+UIView.swift */,
+			);
+			name = Infra;
+			sourceTree = "<group>";
+		};
+		EE2180741E1FE02D004F5AAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180791E1FE086004F5AAB /* Service.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		EE21807B1E1FE08F004F5AAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EE21807C1E1FE09D004F5AAB /* DateUtils.swift */,
+				EE21807D1E1FE09D004F5AAB /* TextUtils.swift */,
+				EE21807E1E1FE09D004F5AAB /* NumberUtils.swift */,
+				EE21807F1E1FE09D004F5AAB /* DecimalField.swift */,
+				EEB4CD7F1E28057300D3B0F3 /* StoryboardUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		EE2180841E1FE0A7004F5AAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180851E1FE0B1004F5AAB /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EE2180871E1FE0B7004F5AAB /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180881E1FE0C3004F5AAB /* HttpStatus.swift */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		EE21808A1E1FE0CC004F5AAB /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE21808B1E1FE0D7004F5AAB /* AppViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		EE21808D1E1FE189004F5AAB /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180ED1E1FE250004F5AAB /* DrawerViewController.swift */,
+				EE2180EE1E1FE250004F5AAB /* ProcessoCadastroViewController.swift */,
+				EE2180EF1E1FE250004F5AAB /* SobreViewController.swift */,
+				EE2180F01E1FE250004F5AAB /* HomeViewController.swift */,
+				EE2180F11E1FE250004F5AAB /* MenuTableViewController.swift */,
+				EE2180F21E1FE250004F5AAB /* LoginViewController.swift */,
+				EE2180F31E1FE250004F5AAB /* SuporteViewController.swift */,
+				EE2180F41E1FE250004F5AAB /* ProcessoPesquisaViewController.swift */,
+				EE2180F51E1FE250004F5AAB /* TermoUsoViewController.swift */,
+				EE2180F61E1FE250004F5AAB /* TermoViewController.swift */,
+				EE2180F71E1FE250004F5AAB /* ProcessoFiltroViewController.swift */,
+				EE2180F81E1FE250004F5AAB /* NovarViewController.swift */,
+				EE2180F91E1FE250004F5AAB /* ProcessoLegandaViewController.swift */,
+				EE2180FA1E1FE250004F5AAB /* DocumentoLegendaTableViewController.swift */,
+				EE2180FB1E1FE250004F5AAB /* ProcessoDetalheViewController.swift */,
+				EE2180FC1E1FE250004F5AAB /* MessageViewController.swift */,
+				EE2180FD1E1FE250004F5AAB /* SeguroEdicaoViewController.swift */,
+				EE2180FE1E1FE250004F5AAB /* SeguroListaViewController.swift */,
+				EE2180FF1E1FE250004F5AAB /* DocumentoListaViewController.swift */,
+				EE2181001E1FE250004F5AAB /* OpcionalViewController.swift */,
+				EE2181011E1FE250004F5AAB /* DocumentoViewController.swift */,
+				EE2181021E1FE250004F5AAB /* ImageViewController.swift */,
+				EE84D8441E2923BE00F7646D /* TransformacaoListViewController.swift */,
+				EE84D8481E29269200F7646D /* TransformacaoEditViewController.swift */,
+				EE84D84A1E29387D00F7646D /* JustificativaViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		EE21808E1E1FE195004F5AAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180DB1E1FE235004F5AAB /* LoginService.swift */,
+				EE2180DC1E1FE235004F5AAB /* NovarService.swift */,
+				EE2180DD1E1FE235004F5AAB /* ProcessoService.swift */,
+				EE2180DE1E1FE235004F5AAB /* MarcaService.swift */,
+				EE2180DF1E1FE235004F5AAB /* ModeloService.swift */,
+				EE2180E01E1FE235004F5AAB /* VersaoService.swift */,
+				EE2180E11E1FE235004F5AAB /* ContaProcessoService.swift */,
+				EE2180E21E1FE235004F5AAB /* ImagemService.swift */,
+				EE2180E31E1FE235004F5AAB /* DocumentoService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		EE21808F1E1FE19E004F5AAB /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				EE2180BB1E1FE1F1004F5AAB /* ProcessoResponse.swift */,
+				EE2180BC1E1FE1F1004F5AAB /* ProcessoRequest.swift */,
+				EE2180BD1E1FE1F1004F5AAB /* KeyValue.swift */,
+				EE2180BE1E1FE1F1004F5AAB /* Digitalizacao.swift */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		EE2180901E1FE1A5004F5AAB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EE2181191E1FE268004F5AAB /* DateField.swift */,
+				EE21811A1E1FE268004F5AAB /* PickerField.swift */,
+				EED300001E2695F3006B0AFA /* Label.swift */,
+				EE84D8401E28F77700F7646D /* View.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE2180481E1FD95E004F5AAB /* Novar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE21805B1E1FD95E004F5AAB /* Build configuration list for PBXNativeTarget "Novar" */;
+			buildPhases = (
+				05F88A62B73A600B319B8F00 /* [CP] Check Pods Manifest.lock */,
+				EE2180451E1FD95E004F5AAB /* Sources */,
+				EE2180461E1FD95E004F5AAB /* Frameworks */,
+				EE2180471E1FD95E004F5AAB /* Resources */,
+				A1A77D7980EE006904EAF727 /* [CP] Embed Pods Frameworks */,
+				48E91C60E1535A0790330D1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Novar;
+			productName = Novar;
+			productReference = EE2180491E1FD95E004F5AAB /* Novar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE2180411E1FD95E004F5AAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Everton Luiz Pascke";
+				TargetAttributes = {
+					EE2180481E1FD95E004F5AAB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A5AW2855YQ;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EE2180441E1FD95E004F5AAB /* Build configuration list for PBXProject "Novar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE2180401E1FD95E004F5AAB;
+			productRefGroup = EE21804A1E1FD95E004F5AAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE2180481E1FD95E004F5AAB /* Novar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE2180471E1FD95E004F5AAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE21811E1E1FE4DE004F5AAB /* Entitlements.plist in Resources */,
+				EE7BAE7E1E283AD700055D28 /* Transformacao.storyboard in Resources */,
+				EEB4CD831E28102F00D3B0F3 /* Processo.storyboard in Resources */,
+				EEB4CD7E1E28019800D3B0F3 /* Documento.storyboard in Resources */,
+				EE21806D1E1FDF8B004F5AAB /* Localizable.strings in Resources */,
+				EE2180691E1FDF6C004F5AAB /* aprovacao.jpg in Resources */,
+				EE7BAE7C1E282FBE00055D28 /* Menu.storyboard in Resources */,
+				EE2180571E1FD95E004F5AAB /* LaunchScreen.storyboard in Resources */,
+				EE2180541E1FD95E004F5AAB /* Assets.xcassets in Resources */,
+				EE2180521E1FD95E004F5AAB /* Main.storyboard in Resources */,
+				EEB4CD7C1E28005000D3B0F3 /* Seguro.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05F88A62B73A600B319B8F00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48E91C60E1535A0790330D1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Novar/Pods-Novar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A77D7980EE006904EAF727 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Novar/Pods-Novar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE2180451E1FD95E004F5AAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE21808C1E1FE0D7004F5AAB /* AppViewController.swift in Sources */,
+				EE2180671E1FDF54004F5AAB /* Novar.swift in Sources */,
+				EE2181071E1FE250004F5AAB /* MenuTableViewController.swift in Sources */,
+				EE2180D11E1FE219004F5AAB /* SeguroDocumentoTableViewCell.swift in Sources */,
+				EE2181171E1FE250004F5AAB /* DocumentoViewController.swift in Sources */,
+				EE2180B51E1FE1E0004F5AAB /* SeguroModel.swift in Sources */,
+				EE21807A1E1FE086004F5AAB /* Service.swift in Sources */,
+				EE2180761E1FE049004F5AAB /* HRToast+UIView.swift in Sources */,
+				EE2180C11E1FE1F1004F5AAB /* KeyValue.swift in Sources */,
+				EE21810E1E1FE250004F5AAB /* NovarViewController.swift in Sources */,
+				EE2180A71E1FE1E0004F5AAB /* RegiaoModel.swift in Sources */,
+				EE2181151E1FE250004F5AAB /* DocumentoListaViewController.swift in Sources */,
+				EE84D8411E28F77700F7646D /* View.swift in Sources */,
+				EE2180821E1FE09D004F5AAB /* NumberUtils.swift in Sources */,
+				EE2180801E1FE09D004F5AAB /* DateUtils.swift in Sources */,
+				EE2180D31E1FE219004F5AAB /* OpcionalTableViewCell.swift in Sources */,
+				EE2181121E1FE250004F5AAB /* MessageViewController.swift in Sources */,
+				EE2180B41E1FE1E0004F5AAB /* TransformacaoModel.swift in Sources */,
+				EE84D8451E2923BE00F7646D /* TransformacaoListViewController.swift in Sources */,
+				EE21811C1E1FE268004F5AAB /* PickerField.swift in Sources */,
+				EE2181101E1FE250004F5AAB /* DocumentoLegendaTableViewController.swift in Sources */,
+				EE2180B11E1FE1E0004F5AAB /* ModeloModel.swift in Sources */,
+				EE2181131E1FE250004F5AAB /* SeguroEdicaoViewController.swift in Sources */,
+				EE2180861E1FE0B1004F5AAB /* Model.swift in Sources */,
+				EE2180E91E1FE235004F5AAB /* VersaoService.swift in Sources */,
+				EE2180AA1E1FE1E0004F5AAB /* PendenciaModel.swift in Sources */,
+				EE2181091E1FE250004F5AAB /* SuporteViewController.swift in Sources */,
+				EE2180D41E1FE219004F5AAB /* ImagemCollectionViewCell.swift in Sources */,
+				EE2180D01E1FE219004F5AAB /* DocumentoLengendaTableViewCell.swift in Sources */,
+				EE21811B1E1FE268004F5AAB /* DateField.swift in Sources */,
+				EE2180A81E1FE1E0004F5AAB /* ConcessionariaModel.swift in Sources */,
+				EE2180B01E1FE1E0004F5AAB /* MarcaModel.swift in Sources */,
+				EE21810D1E1FE250004F5AAB /* ProcessoFiltroViewController.swift in Sources */,
+				EE21804D1E1FD95E004F5AAB /* AppDelegate.swift in Sources */,
+				EE2180B91E1FE1E0004F5AAB /* DocumentosModel.swift in Sources */,
+				EE2181051E1FE250004F5AAB /* SobreViewController.swift in Sources */,
+				EE2180CF1E1FE219004F5AAB /* ProcessoLegendaTableViewCell.swift in Sources */,
+				EE2180D21E1FE219004F5AAB /* DocumentoTableViewCell.swift in Sources */,
+				EE2180CE1E1FE219004F5AAB /* ProcessoTableViewCell.swift in Sources */,
+				EE21810C1E1FE250004F5AAB /* TermoViewController.swift in Sources */,
+				EE2180EB1E1FE235004F5AAB /* ImagemService.swift in Sources */,
+				EE2180C01E1FE1F1004F5AAB /* ProcessoRequest.swift in Sources */,
+				EE2180E41E1FE235004F5AAB /* LoginService.swift in Sources */,
+				EEB4CD801E28057300D3B0F3 /* StoryboardUtils.swift in Sources */,
+				EE2180891E1FE0C3004F5AAB /* HttpStatus.swift in Sources */,
+				EE2180AD1E1FE1E0004F5AAB /* FinanciadoModel.swift in Sources */,
+				EE2180EA1E1FE235004F5AAB /* ContaProcessoService.swift in Sources */,
+				EE2180AF1E1FE1E0004F5AAB /* DocumentoModel.swift in Sources */,
+				EE2180E81E1FE235004F5AAB /* ModeloService.swift in Sources */,
+				EE2180B71E1FE1E0004F5AAB /* PagingModel.swift in Sources */,
+				EED300011E2695F3006B0AFA /* Label.swift in Sources */,
+				EE2180EC1E1FE235004F5AAB /* DocumentoService.swift in Sources */,
+				EE2180E51E1FE235004F5AAB /* NovarService.swift in Sources */,
+				EE2180A61E1FE1E0004F5AAB /* UsuarioModel.swift in Sources */,
+				EE2180BF1E1FE1F1004F5AAB /* ProcessoResponse.swift in Sources */,
+				EE21810B1E1FE250004F5AAB /* TermoUsoViewController.swift in Sources */,
+				EE2181181E1FE250004F5AAB /* ImageViewController.swift in Sources */,
+				EE21810F1E1FE250004F5AAB /* ProcessoLegandaViewController.swift in Sources */,
+				EE2181141E1FE250004F5AAB /* SeguroListaViewController.swift in Sources */,
+				EE2180BA1E1FE1E0004F5AAB /* ImagemModel.swift in Sources */,
+				EE84D8471E29254B00F7646D /* TransformacaoTableViewCell.swift in Sources */,
+				EE2180B61E1FE1E0004F5AAB /* SeguroDocumentoModel.swift in Sources */,
+				EE2180E61E1FE235004F5AAB /* ProcessoService.swift in Sources */,
+				EE2180B81E1FE1E0004F5AAB /* DataMobileModel.swift in Sources */,
+				EE84D8491E29269200F7646D /* TransformacaoEditViewController.swift in Sources */,
+				EE2180AC1E1FE1E0004F5AAB /* EmpresaTransformadoraModel.swift in Sources */,
+				EE2181111E1FE250004F5AAB /* ProcessoDetalheViewController.swift in Sources */,
+				EE2180831E1FE09D004F5AAB /* DecimalField.swift in Sources */,
+				EE2180781E1FE071004F5AAB /* App.swift in Sources */,
+				EE2180B31E1FE1E0004F5AAB /* TipoProcessoModel.swift in Sources */,
+				EE2180811E1FE09D004F5AAB /* TextUtils.swift in Sources */,
+				EE2180C61E1FE206004F5AAB /* ProcessoFiltro.swift in Sources */,
+				EE2180D91E1FE227004F5AAB /* DocumentoRepository.swift in Sources */,
+				EE2180AB1E1FE1E0004F5AAB /* IrregularidadeModel.swift in Sources */,
+				EE2181081E1FE250004F5AAB /* LoginViewController.swift in Sources */,
+				EE2180C21E1FE1F1004F5AAB /* Digitalizacao.swift in Sources */,
+				EE2180B21E1FE1E0004F5AAB /* VersaoModel.swift in Sources */,
+				EE2181231E1FEF06004F5AAB /* NovarDataModel.xcdatamodeld in Sources */,
+				EE2180AE1E1FE1E0004F5AAB /* ProcessoModel.swift in Sources */,
+				EE21810A1E1FE250004F5AAB /* ProcessoPesquisaViewController.swift in Sources */,
+				EE2180DA1E1FE227004F5AAB /* ImagemRepository.swift in Sources */,
+				EE2180D81E1FE227004F5AAB /* DataModelRepository.swift in Sources */,
+				EE2181041E1FE250004F5AAB /* ProcessoCadastroViewController.swift in Sources */,
+				EE84D84B1E29387D00F7646D /* JustificativaViewController.swift in Sources */,
+				EE2181061E1FE250004F5AAB /* HomeViewController.swift in Sources */,
+				EE2181161E1FE250004F5AAB /* OpcionalViewController.swift in Sources */,
+				EE2180E71E1FE235004F5AAB /* MarcaService.swift in Sources */,
+				EE2181031E1FE250004F5AAB /* DrawerViewController.swift in Sources */,
+				EE2180651E1FDF04004F5AAB /* SWRevealViewController.m in Sources */,
+				EE2180A91E1FE1E0004F5AAB /* ContaProcessoModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE2180501E1FD95E004F5AAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2180511E1FD95E004F5AAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE2180551E1FD95E004F5AAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2180561E1FD95E004F5AAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EEB4CD7A1E28005000D3B0F3 /* Seguro.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEB4CD7B1E28005000D3B0F3 /* Base */,
+			);
+			name = Seguro.storyboard;
+			sourceTree = "<group>";
+		};
+		EEB4CD811E28102F00D3B0F3 /* Processo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEB4CD821E28102F00D3B0F3 /* Base */,
+			);
+			name = Processo.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE2180591E1FD95E004F5AAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE21805A1E1FD95E004F5AAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE21805C1E1FD95E004F5AAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED48F3D742E212E756B64672 /* Pods-Novar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A5AW2855YQ;
+				INFOPLIST_FILE = Novar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.wasys.rci.Novar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b179f208-19b6-4458-8f4d-788b70392b78";
+				PROVISIONING_PROFILE_SPECIFIER = "Novar Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "Novar/Novar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE21805D1E1FD95E004F5AAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB79CCC77EBBD641C156F660 /* Pods-Novar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A5AW2855YQ;
+				INFOPLIST_FILE = Novar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.wasys.rci.Novar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b179f208-19b6-4458-8f4d-788b70392b78";
+				PROVISIONING_PROFILE_SPECIFIER = "Novar Development";
+				SWIFT_OBJC_BRIDGING_HEADER = "Novar/Novar-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EE21805E1E1FDA96004F5AAB /* Ad Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc Distribution";
+		};
+		EE21805F1E1FDA96004F5AAB /* Ad Hoc Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 764A5FF32956F5A8AF8BF85F /* Pods-Novar.ad hoc distribution.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = A5AW2855YQ;
+				INFOPLIST_FILE = Novar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.wasys.rci.Novar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "55bd3538-915b-4bfa-85fd-3c4f42a2350e";
+				PROVISIONING_PROFILE_SPECIFIER = "Novar Ad Hoc";
+				SWIFT_OBJC_BRIDGING_HEADER = "Novar/Novar-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Ad Hoc Distribution";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE2180441E1FD95E004F5AAB /* Build configuration list for PBXProject "Novar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2180591E1FD95E004F5AAB /* Debug */,
+				EE21805A1E1FD95E004F5AAB /* Release */,
+				EE21805E1E1FDA96004F5AAB /* Ad Hoc Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE21805B1E1FD95E004F5AAB /* Build configuration list for PBXNativeTarget "Novar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE21805C1E1FD95E004F5AAB /* Debug */,
+				EE21805D1E1FD95E004F5AAB /* Release */,
+				EE21805F1E1FDA96004F5AAB /* Ad Hoc Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE2181211E1FEF06004F5AAB /* NovarDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE2181221E1FEF06004F5AAB /* NovarDataModel.xcdatamodel */,
+			);
+			currentVersion = EE2181221E1FEF06004F5AAB /* NovarDataModel.xcdatamodel */;
+			path = NovarDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE2180411E1FD95E004F5AAB /* Project object */;
+}

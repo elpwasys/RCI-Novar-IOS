@@ -1,0 +1,96 @@
+/* 
+  Localizable.strings
+  Novar
+
+  Created by Everton Luiz Pascke on 09/11/16.
+  Copyright © 2016 Everton Luiz Pascke. All rights reserved.
+*/
+
+/* Label */
+"Label.Editar" = "Editar";
+"Label.Fechar" = "Fechar";
+"Label.Cancelar" = "Cancelar";
+"Label.Selecione" = "-- Selecione --";
+"Label.Processo" = "Processo";
+"Label.Sim" = "Sim";
+"Label.Nao" = "Não";
+"Label.Concessionaria" = "Concessionária";
+"Label.DataProposta" = "Data da proposta";
+"Label.NumeroProposta" = "Número da proposta";
+"Label.Conta" = "Conta";
+"Label.TipoVenda" = "Tipo de venda";
+"Label.PossuiBoleto" = "Possui boleto";
+"Label.NumeroBoleto" = "Número do boleto";
+"Label.ValorBoleto" = "Valor do boleto";
+"Label.VencimentoBoleto" = "Vencimento do boleto";
+"Label.Marca" = "Marca";
+"Label.Modelo" = "Modelo";
+"Label.Versao" = "Versão";
+"Label.CodigoOperador" = "Código do operador";
+"Label.UFEmplacamento" = "UF do emplacamento";
+"Label.NomeAvalista" = "Nome do avalista";
+"Label.CPFAvalista" = "CPF do avalista";
+"Label.Conferencia" = "Conferência";
+"Label.Documento" = "Documento";
+"Label.Documentos" = "Documentos";
+"Label.Pendencias" = "Pendências";
+"Label.Imagem" = "Imagem";
+"Label.Reenviar" = "Reenviar";
+
+/* Question */
+"Question.ProcessoEdicao" = "Os documentos terão de ser analisados novamente, tem certeza que deseja prosseguir?";
+"Question.ProcessoFinalizar" = "Deseja enviar para conferência?";
+"Question.ImagemExcluir" = "Deseja excluir esta imagem?";
+"Question.DocumentoExcluir" = "Deseja excluir este documento?";
+"Question.DocumentoErro" = "Ocorreu um erro na digitailzação.\nO que você deseja fazer?";
+
+/* Message */
+"Message.SincronizandoDocumento" = "Sincronizando documento";
+"Message.AguardandoDigitalizacao" = "Aguardando digitalização";
+"Message.ImagemNaoEcontradaDigitalizacao" = "Nenhuma imagem encontrada para digitalização";
+
+/* Processo.Status */
+"Processo.Status.criado" = "Aguardando digitalização";
+"Processo.Status.digitalizado" = "Digitalizado";
+"Processo.Status.pendente" = "Problema/Pendência";
+"Processo.Status.conferido" = "Conferido";
+"Processo.Status.retornado" = "Retornado";
+"Processo.Status.digitado" = "Digitado";
+"Processo.Status.liberado" = "Aguardando envio/validação dos documentos físicos";
+"Processo.Status.pendenteFisico" = "Problemas/Pendências nos documentos físicos";
+"Processo.Status.concluido" = "Concluído";
+"Processo.Status.contratoCancelado" = "Contrato cancelado";
+"Processo.Status.expirado" = "Expirado";
+"Processo.Status.cancelado" = "Proposta cancelada";
+
+/* Processo.Produto */
+"Processo.Produto.cdc" = "CDC";
+"Processo.Produto.lsg" = "LSG";
+"Processo.Produto.cdcFlex" = "CDC FLEX";
+
+/* Processo.TipoVenda */
+"Processo.TipoVenda.direta" = "Venda direta";
+"Processo.TipoVenda.eComerce" = "TED";
+"Processo.TipoVenda.outro" = "Outro";
+
+/* Processo.PerfilCliente */
+"Processo.PerfilCliente.pne" = "PNE";
+"Processo.PerfilCliente.taxista" = "Taxista";
+"Processo.PerfilCliente.outro" = "Outro";
+
+/* Processo.SituacaoVeiculo */
+"Processo.SituacaoVeiculo.zeroKm" = "0 km";
+"Processo.SituacaoVeiculo.usado" = "Usado";
+
+/* Documento.Status */
+"Documento.Status.criado" = "Aguardando digitalização";
+"Documento.Status.digitalizado" = "Digitalizado";
+"Documento.Status.pendente" = "Problema/Pendência";
+"Documento.Status.aprovado" = "Aprovado";
+"Documento.Status.aguardandoFisico" = "Aguardando envio do documento físico";
+"Documento.Status.enviadoFisico" = "Aguardando validação do documento físico";
+"Documento.Status.pendenteFisico" = "PENDENTE_FISICO";
+"Documento.Status.concluido" = "Concluído";
+"Documento.Status.deletado" = "Deletado";
+"Documento.Status.digitalizando" = "Digitalizando...";
+"Documento.Status.erroDigitalizacao" = "Erro na digitalização";

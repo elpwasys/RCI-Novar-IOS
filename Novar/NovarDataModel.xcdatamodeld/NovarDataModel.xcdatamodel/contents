@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Documento" representedClassName="Documento" syncable="YES" codeGenerationType="class">
+        <attribute name="data" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" attributeType="String" syncable="YES"/>
+        <attribute name="processoId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="status" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Imagem" representedClassName="Imagem" syncable="YES" codeGenerationType="class">
+        <attribute name="documentoId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="extensao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usuarioId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Documento" positionX="-8262" positionY="-7956" width="128" height="118"/>
+        <element name="Imagem" positionX="-8244" positionY="-7902" width="128" height="120"/>
+    </elements>
+</model>

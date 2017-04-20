@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wls-YJ-MNR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transformações-->
+        <scene sceneID="Lx4-Ef-XLo">
+            <objects>
+                <viewController storyboardIdentifier="Scene.Transformacoes" automaticallyAdjustsScrollViewInsets="NO" id="wls-YJ-MNR" customClass="TransformacaoListViewController" customModule="Novar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zlx-Bi-nb0"/>
+                        <viewControllerLayoutGuide type="bottom" id="XNL-EW-499"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ABh-yP-QPM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aoZ-iq-3YC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransformacaoTableViewCell" id="bQO-pQ-umK" customClass="TransformacaoTableViewCell" customModule="Novar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bQO-pQ-umK" id="0Mv-JE-T3a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S2-6E-fTr">
+                                                    <rect key="frame" x="16" y="16" width="245" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="2eq-4U-fLS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFC-by-ttd">
+                                                    <rect key="frame" x="269" y="16" width="90" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="bb1-dk-mp3"/>
+                                                        <constraint firstAttribute="height" constant="24" id="rKo-ry-eW5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XFC-by-ttd" firstAttribute="top" secondItem="0Mv-JE-T3a" secondAttribute="topMargin" constant="8" id="3Wr-Zh-Ppz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="XFC-by-ttd" secondAttribute="trailing" constant="8" id="63t-xw-6uA"/>
+                                                <constraint firstItem="9S2-6E-fTr" firstAttribute="leading" secondItem="0Mv-JE-T3a" secondAttribute="leadingMargin" constant="8" id="Ss0-OL-K7u"/>
+                                                <constraint firstItem="XFC-by-ttd" firstAttribute="leading" secondItem="9S2-6E-fTr" secondAttribute="trailing" constant="8" id="e6w-rt-I3S"/>
+                                                <constraint firstItem="9S2-6E-fTr" firstAttribute="top" secondItem="0Mv-JE-T3a" secondAttribute="topMargin" constant="8" id="osG-ms-k7n"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descricaoLabel" destination="9S2-6E-fTr" id="QzT-hd-spj"/>
+                                            <outlet property="valorLabel" destination="XFC-by-ttd" id="nxP-UZ-aMM"/>
+                                            <segue destination="kJM-Cc-14Q" kind="show" identifier="Segue.Edit.Transformacao" id="E4I-Yu-geA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aoZ-iq-3YC" secondAttribute="trailing" id="9mR-jB-t6V"/>
+                            <constraint firstItem="aoZ-iq-3YC" firstAttribute="top" secondItem="zlx-Bi-nb0" secondAttribute="bottom" id="Jsq-yN-bDa"/>
+                            <constraint firstItem="XNL-EW-499" firstAttribute="top" secondItem="aoZ-iq-3YC" secondAttribute="bottom" id="ShL-gp-Y1p"/>
+                            <constraint firstItem="aoZ-iq-3YC" firstAttribute="leading" secondItem="ABh-yP-QPM" secondAttribute="leading" id="stN-7V-qcU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transformações" id="7fR-aK-rJG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5RR-Wj-2Dr">
+                            <connections>
+                                <segue destination="kJM-Cc-14Q" kind="show" identifier="Segue.Add.Transformacao" id="Czc-lH-mR5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="5RR-Wj-2Dr" id="whl-yw-SQf"/>
+                        <outlet property="tableView" destination="aoZ-iq-3YC" id="jBk-96-hCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIA-xM-Wa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="-45.42728635682159"/>
+        </scene>
+        <!--Transformação-->
+        <scene sceneID="gqV-ZD-qZz">
+            <objects>
+                <viewController storyboardIdentifier="Scene.Transformacao" id="kJM-Cc-14Q" customClass="TransformacaoEditViewController" customModule="Novar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jji-H1-Iyq"/>
+                        <viewControllerLayoutGuide type="bottom" id="byd-kw-TtN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GpS-fd-UKt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transformação *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sld-Ea-sIi">
+                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.99856656789779663" green="0.34127730131149292" blue="0.12961971759796143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMt-ck-LFL" customClass="PickerField" customModule="Novar" customModuleProvider="target">
+                                <rect key="frame" x="16" y="101" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onDidBeginEditing" destination="kJM-Cc-14Q" eventType="editingDidBegin" id="ACI-dZ-b8z"/>
+                                    <action selector="onDidEndEditing" destination="kJM-Cc-14Q" eventType="editingDidEnd" id="WMf-0A-aqY"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor da transformação *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpG-xR-1ZB">
+                                <rect key="frame" x="16" y="139" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.99856656789779663" green="0.34127730131149292" blue="0.12961971759796143" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WU4-gB-y0B" customClass="DecimalField" customModule="Novar" customModuleProvider="target">
+                                <rect key="frame" x="16" y="168" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onDidBeginEditing" destination="kJM-Cc-14Q" eventType="editingDidBegin" id="HV7-9c-FZj"/>
+                                    <action selector="onDidEndEditing" destination="kJM-Cc-14Q" eventType="editingDidEnd" id="tr1-5e-ZPG"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transformação" id="BLB-rc-UzM">
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="TFG-HX-siV">
+                            <connections>
+                                <segue destination="yb2-Q2-Glb" kind="unwind" unwindAction="unwindToTransformacaoListWithSender:" id="Pso-6k-wJs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="salvarButton" destination="TFG-HX-siV" id="lga-nL-f9T"/>
+                        <outlet property="transformacaoField" destination="SMt-ck-LFL" id="Skv-HM-gac"/>
+                        <outlet property="valorField" destination="WU4-gB-y0B" id="750-8O-uaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kef-1e-6BC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yb2-Q2-Glb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="-45.42728635682159"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="E4I-Yu-geA"/>
+    </inferredMetricsTieBreakers>
+</document>

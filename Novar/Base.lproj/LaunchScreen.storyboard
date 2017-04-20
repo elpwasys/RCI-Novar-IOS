@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Mn-N6-KDC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5qc-Q8-16a">
+            <objects>
+                <viewController id="5Mn-N6-KDC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="303-YJ-zDV"/>
+                        <viewControllerLayoutGuide type="bottom" id="aRc-fx-Wlg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6FE-95-ATL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgSplash" translatesAutoresizingMaskIntoConstraints="NO" id="RcW-a2-gyZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogo" translatesAutoresizingMaskIntoConstraints="NO" id="YGN-il-oD5">
+                                <rect key="frame" x="16" y="308" width="343" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="g69-iX-4SK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RcW-a2-gyZ" firstAttribute="leading" secondItem="6FE-95-ATL" secondAttribute="leading" id="5qR-cH-rZw"/>
+                            <constraint firstItem="aRc-fx-Wlg" firstAttribute="top" secondItem="RcW-a2-gyZ" secondAttribute="bottom" id="DAI-6T-jfj"/>
+                            <constraint firstItem="YGN-il-oD5" firstAttribute="leading" secondItem="6FE-95-ATL" secondAttribute="leadingMargin" id="IaL-SV-s6B"/>
+                            <constraint firstAttribute="trailing" secondItem="RcW-a2-gyZ" secondAttribute="trailing" id="RDv-mQ-FbQ"/>
+                            <constraint firstItem="RcW-a2-gyZ" firstAttribute="top" secondItem="6FE-95-ATL" secondAttribute="top" id="Shd-Oh-nrD"/>
+                            <constraint firstItem="YGN-il-oD5" firstAttribute="trailing" secondItem="6FE-95-ATL" secondAttribute="trailingMargin" id="TXW-qs-14b"/>
+                            <constraint firstItem="YGN-il-oD5" firstAttribute="centerY" secondItem="6FE-95-ATL" secondAttribute="centerY" id="yWp-gK-3Tn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMu-iG-V0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="397"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgSplash" width="495" height="700"/>
+        <image name="icLogo" width="320" height="46"/>
+    </resources>
+    <color key="tintColor" red="1" green="0.4703968167" blue="0.016345972199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
